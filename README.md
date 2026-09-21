@@ -8,7 +8,7 @@
 ## Change the CTA
 Open `script.js` and change:
 
-const CTA_URL = "const CTA_URL = "mailto:mohammedtanzeel175@gmail.com";";
+const CTA_URL = "const CTA_URL = "";";
 
 to the destination you want.
 
