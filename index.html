@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#090706">
+  <title>One More Letter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="scene" aria-label="An interactive cinematic letter">
+    <div class="sky-glow"></div>
+    <div class="moon"></div>
+    <div class="mist mist-a"></div>
+    <div class="mist mist-b"></div>
+    <div class="ground"></div>
+    <div class="vignette"></div>
+
+    <section class="intro" id="intro">
+      <p>There is one last letter waiting.</p>
+      <span>Tap the post box</span>
+    </section>
+
+    <section class="postbox-wrap" id="postbox" role="button" tabindex="0"
+             aria-label="Open the post box">
+      <div class="halo"></div>
+
+      <div class="postbox">
+        <div class="box-body">
+          <div class="gold-rivet r1"></div>
+          <div class="gold-rivet r2"></div>
+          <div class="gold-rivet r3"></div>
+          <div class="gold-rivet r4"></div>
+          <div class="slot"></div>
+          <div class="crest">✦</div>
+          <div class="body-sheen"></div>
+        </div>
+
+        <div class="box-opening">
+          <div class="inner-light"></div>
+          <div class="inner-dark"></div>
+        </div>
+
+        <div class="door">
+          <div class="door-panel">
+            <div class="door-rim"></div>
+            <div class="door-handle"></div>
+          </div>
+        </div>
+
+        <div class="post">
+          <div class="post-shadow"></div>
+        </div>
+      </div>
+
+      <div class="dust-layer" id="dust"></div>
+      <div class="smoke-layer" id="smoke"></div>
+      <div class="letter" id="letter" aria-hidden="true">
+        <div class="letter-paper">
+          <div class="paper-fold"></div>
+          <div class="wax">✦</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="burst" id="burst"></div>
+    <canvas id="particles" aria-hidden="true"></canvas>
+
+    <section class="message" id="message" aria-live="polite">
+      <div class="line" data-line="0">Hey...</div>
+      <div class="line" data-line="1">We actually made it through the internship.</div>
+      <div class="line" data-line="2">Things won't always make sense.</div>
+      <div class="line" data-line="3">And sometimes...</div>
+      <div class="line" data-line="4">you might feel completely helpless.</div>
+
+      <div class="main-message" id="mainMessage">
+        <span>If you ever feel helpless,</span>
+        <span>reach out to me —</span>
+        <span>we'll feel helpless together! 🤝</span>
+      </div>
+
+      <div class="final-message" id="finalMessage">
+        <p>Because we've already survived one internship together.</p>
+        <p>Take care of yourself.<br>And don't hesitate to reach out.</p>
+        <p class="signature">— Your internship buddy</p>
+        <a class="cta" id="cta" href="https://example.com" target="_blank" rel="noopener noreferrer">
+          Reach out to me 🤝
+        </a>
+      </div>
+    </section>
+
+    <button class="restart" id="restart" type="button">Experience again</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
