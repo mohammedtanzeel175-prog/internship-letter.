@@ -8,7 +8,7 @@
 ## Change the CTA
 Open `script.js` and change:
 
-const CTA_URL = "const CTA_URL = "";";
+const CTA_URL = "const CTA_URL = "http:example.com";
 
 to the destination you want.
 
