@@ -22,6 +22,10 @@
   const restart = document.getElementById("restart");
 
   cta.href = CTA_URL;
+  
+  cta.addEventListener("click", () => {
+  window.open(CTA_URL, "_blank");
+});
 
   let state = "IDLE";
   let started = false;
