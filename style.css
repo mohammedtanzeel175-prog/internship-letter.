@@ -528,6 +528,11 @@ button, a { font: inherit; }
   opacity: 0;
   transform: translateY(8px);
   transition: opacity .9s ease, transform .9s var(--ease), background .3s ease, box-shadow .3s ease;
+  
+  position: relative;
+  z-index: 9999;
+  pointer-events: auto;
+  cursor: pointer;
 }
 .cta.show { opacity: 1; transform: translateY(0); }
 .cta:hover, .cta:focus-visible {
