@@ -4,7 +4,7 @@
   // ============================
   // CHANGE THIS URL FOR THE CTA
   // ============================
-  const CTA_URL = "const CTA_URL = "mailto:mohammedtanzeel175@gmail.com";
+  const CTA_URL = "mailto:mohammedtanzeel175@gmail.com";
 
   const scene = document.getElementById("scene");
   const postbox = document.getElementById("postbox");
